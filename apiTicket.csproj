@@ -1,0 +1,86 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPPlus.Core" Version="1.5.4" />
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="2.19.70" />
+    <PackageReference Include="RestSharp" Version="106.11.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.1" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+    <PackageReference Include="System.Drawing.Common" Version="5.0.0" />
+  </ItemGroup>  
+  <ItemGroup>
+    <None Update="Messages.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>  
+  <ItemGroup>
+    <Folder Include="Mail\" />
+    <Folder Include="Repository\DB\" />
+  </ItemGroup>  
+   <ItemGroup>
+    <Content Include="Mail\**" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>  
+   <ItemGroup>
+     <Content Update="Mail\AtencionCanal.html">
+       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+     </Content>
+     <Content Update="Mail\AtencionR.html">
+       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+     </Content>
+     <Content Update="Mail\AtencionRQ.html">
+       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+     </Content>
+     <Content Update="Mail\AtencionS.html">
+       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+     </Content>
+     <Content Update="Mail\Cierre.html">
+       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+     </Content>
+     <Content Update="Mail\Consulta.html">
+       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+     </Content>
+     <Content Update="Mail\logo.png">
+       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+     </Content>
+     <Content Update="Mail\POL_08.html">
+       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+     </Content>
+     <Content Update="Mail\RecepcionCanal.html">
+       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+     </Content>
+     <Content Update="Mail\Reclamo.html">
+       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+     </Content>
+     <Content Update="Mail\reporterr1.html">
+       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+     </Content>
+     <Content Update="Mail\reporterr3.html">
+       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+     </Content>
+     <Content Update="Mail\Requerimiento.html">
+       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+     </Content>
+     <Content Update="Mail\Requerimiento1.html">
+       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+     </Content>
+     <Content Update="Mail\RR1_ReporteDetalleReclamos360.html">
+       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+     </Content>
+     <Content Update="Mail\Solicitud.html">
+       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+     </Content>
+     <Content Update="Mail\Tramite.html">
+       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+     </Content>
+   </ItemGroup>
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+</Project>

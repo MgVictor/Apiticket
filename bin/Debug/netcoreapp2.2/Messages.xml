@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <!--Mensaje de Errores-->
+    <add key="CAMPO_OBLIGATORIO" value="001;El campo [campo] es obligatorio cuando el código de operacion es [codigo]"/>
+    <add key="CAMPO_OBLIGATORIO_SUB" value="001;El campo [campo] en la estructura [estructura] es obligatorio cuando el código de operacion es [codigo]"/>
+    <add key="TIPO_DATO_NO_NUMERICO" value="002;El campo [] debe ser númerico"/>
+    <add key="ESTRUCTURA_SIN_DATOS" value="003;La estructura [estructura] esta vacía"/>
+    <add key="OPERACION_NO_ENVIADA" value="004;Debe enviar un còdigo de tipo de operaciòn, 1: Registro Ticket  2:Actualizar Ticket"/>
+	  <!--  produccion  -->
+	  <!-- <add key="SERVICIOAWS_REGISTRAR" value="https://ro9yl64pp5.execute-api.us-east-1.amazonaws.com/dev/jira/v1"/> -->
+	  <!--  produccion nuevo -->
+	  <add key="SERVICIOAWS_REGISTRAR" value="https://api.soporte.protectasecuritycloud.pe/jira/v1"/>
+	  <!--  desarrollo  -->
+	  <!--<add key="SERVICIOAWS_REGISTRAR" value="https://wro9yl64pp5.execute-api.us-east-1.amazonaws.com/dev/jira/v1"/>-->
+	  <!--  desarrollo  nuevo-->
+	  <!--<add key="SERVICIOAWS_REGISTRAR" value="https://api-stg.soporte.protectasecuritycloud.pe/dev/jira/v1"/>-->
+	  <add key="SERVICIOAWS_REGISTRAR2" value="/issues"/>
+	  <add key="SERVICIOAWS_KEY" value="xIfCaOGWUS6vOyykLCvGTaE5c5ESz4rzQqpnYyuj"/>
+	  <!--  produccion  -->
+	  <!-- <add key="SERVICIOAWS_CONSULTA" value="https://ro9yl64pp5.execute-api.us-east-1.amazonaws.com"/> -->
+	  <!--  produccion  nuevo-->
+	  <add key="SERVICIOAWS_CONSULTA" value="https://api.soporte.protectasecuritycloud.pe"/>
+	  <!--  desarrollo  nuevo-->
+	  <!--<add key="SERVICIOAWS_CONSULTA" value="https://api-stg.soporte.protectasecuritycloud.pe/"/>-->
+	  <add key="SERVICIOAWS_CONSULTA2" value="/jira/v1/issues?limit=50&amp;offset=0&amp;jql=(project="/>
+	  <add key="SERVICIOAWS_LISTAR" value="004;Debe enviar un còdigo de tipo de operaciòn, 1: Registro Ticket  2:Actualizar Ticket"/>
+	  <!--  produccion  -->
+	  <!-- <add key="SERVICIOAWS_ADJUNTAR" value="https://ro9yl64pp5.execute-api.us-east-1.amazonaws.com/dev/jira/v1/attachments?file="/> -->
+	  <!--  produccion nuevo -->
+	  <add key="SERVICIOAWS_ADJUNTAR" value="https://api.soporte.protectasecuritycloud.pe/jira/v1/attachments?file="/>
+	  <!--  desarrollo  -->
+	  <!--<add key="SERVICIOAWS_ADJUNTAR" value="https://wro9yl64pp5.execute-api.us-east-1.amazonaws.com/dev/jira/v1/attachments?file="/>-->
+	  <!--  desarrollo  nuevo -->
+	  <!--<add key="SERVICIOAWS_ADJUNTAR" value="https://api-stg.soporte.protectasecuritycloud.pe/jira/v1/attachments?file="/>-->
+	  <!--  produccion  -->
+	  <!-- <add key="SERVICIOAWS_GETADJUNTO" value="https://ro9yl64pp5.execute-api.us-east-1.amazonaws.com/dev/jira/v1/attachments/"/> -->
+	  <!--  produccion nuevo  -->
+	  <add key="SERVICIOAWS_GETADJUNTO" value="https://api.soporte.protectasecuritycloud.pe/jira/v1/attachments/"/>
+	  <!--  desarrollo  -->
+	  <!--<add key="SERVICIOAWS_GETADJUNTO" value="https://wro9yl64pp5.execute-api.us-east-1.amazonaws.com/dev/jira/v1/attachments/"/>-->
+	  <!--  desarrollo nuevo -->
+	  <!--<add key="SERVICIOAWS_GETADJUNTO" value="https://api-stg.soporte.protectasecuritycloud.pe/dev/jira/v1/attachments/"/>-->
+	  <!--  produccion  -->
+	  <add key="URL_GET_TOKEN_SGC" value="https://nntp-user-pool.auth.us-east-1.amazoncognito.com/"/>
+	  <!--  desarrollo  -->
+	  <!--<add key="URL_GET_TOKEN_SGC" value="https://nntp-user-pool-stg.auth.us-east-1.amazoncognito.com/"/>-->
+	  <!--  produccion  -->
+	  <add key="URL_GET_TOKEN_360" value="https://nntp-user-pool.auth.us-east-1.amazoncognito.com/"/>
+	  <!--  desarrollo  -->
+	  <!--<add key="URL_GET_TOKEN_360" value="https://nntp-user-pool-stg.auth.us-east-1.amazoncognito.com/"/>-->
+	  <!--  produccion  -->
+	  <add key="USERNAME_SGC" value="3duels5md98ahbel1qof7nu2dc"/>
+	  <!--  desarrollo  -->
+	  <!--<add key="USERNAME_SGC" value="5rj15ua9dcg85tv19dhj7anibk"/>-->
+	  <!--  produccion  -->
+	  <add key="PASSWORD_SGC" value="1t0ohjbf28f0o6m3pl1pu96kf6a6aogp9o19bugp44fop9o8vsmq"/>
+	  <!--  desarrollo  -->
+	  <!--<add key="PASSWORD_SGC" value="1vcdqe4b2aeoegoclh8bjle4ki8bqk2pmlrf58tod5bajes4mr8r"/>-->
+	  <!--  produccion  -->
+	  <!-- <add key="USERNAME_360" value="69jen20b7v58idcah6p6011hg6"/> -->
+	  <!--  desarrollo  -->
+	  <add key="USERNAME_360" value="69jen20b7v58idcah6p6011hg6"/>
+	  <!--  produccion  -->
+	  <!-- <add key="PASSWORD_360" value="80l72mn8veh8uutcl5g6ulmgnt43fo9qlc3nhaa677q569539n0"/>  -->
+	  <!--  desarrollo  -->
+	  <add key="PASSWORD_360" value="80l72mn8veh8uutcl5g6ulmgnt43fo9qlc3nhaa677q569539n0"/>
+	  <!--  produccion  -->
+	  <!-- <add key="URL_GET_TOKEN_360" value="https://nntp-user-pool.auth.us-east-1.amazoncognito.com/"/> -->
+	  <!--  desarrollo  -->
+	  <!--<add key="SCOPE" value="https://api-stg.soporte.protectasecuritycloud.pe/jira_basic"/>-->
+	  <!--  produccion  -->
+	  <add key="SCOPE" value="https://api.soporte.protectasecuritycloud.pe/jira_basic"/>
+	  <!--  desarrollo  -->
+    <!--<add key="SERVICIOAWS_GETADJUNTO" value="https://wro9yl64pp5.execute-api.us-east-1.amazonaws.com/dev/jira/v1/attachments/"/>-->
+	  <!--//hcama @mg  20220216  ini-->
+	  <!--  produccion  -->
+	  <!--<add key="SERVICIOWEB_GCLIENTE" value="http://10.10.1.56/WSGClientesDesarrollo/"/>-->
+	  <!--  produccion  -->
+	  <!--<add key="SERVICIOWEB_GCLIENTE" value="http://localhost:4154/"/>
+	  <add key="USUARIOCORREO_CANALTICKET_CLIENTES" value="clientes@protectasecurity.pe"/>
+	  <add key="PWDCORREO_CANALTICKET_CLIENTES" value="Protecta%%"/>
+	  <add key="USUARIOCORREO_CANALTICKET_CORPORATIVO" value="canalcorporativo@protectasecurity.pe"/>
+	  <add key="PWDUARIOCORREO_CANALTICKET_CORPORATIVO" value="20Corp&amp;PR3S."/>-->
+	  <!--  desarrollo  -->
+	  <add key="SERVICIOWEB_GCLIENTE" value="http://10.10.1.58/WSGestorCliente/"/>
+	  <add key="USUARIOCORREO_CANALTICKET_CLIENTES" value="clientes@protectasecurity.pe"/>
+	  <add key="PWDCORREO_CANALTICKET_CLIENTES" value="Protecta%%"/>
+	  <add key="USUARIOCORREO_CANALTICKET_CORPORATIVO" value="canalcorporativo@protectasecurity.pe"/>
+	  <add key="PWDUARIOCORREO_CANALTICKET_CORPORATIVO" value="20Corp&amp;PR3S."/>
+	  <!--//hcama @mg  20220216  fin-->
+
+	
+  </appSettings>
+</configuration>
